@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Apple Store</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="custom-navbar">
+    <div class="custom-container">
+        <a class="custom-brand" href="#">Faisal Apple Store</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <div class="custom-nav" id="nav">
+            <ul class="custom-nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#" onclick="showCart()">
+                        🛒 Cart
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section">
+    <div class="hero-banner">
+        <img src="img/outsideshop.png" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>Latest iPhones Available</h1>
+            <p>Get premium Apple devices at the best price</p>
+            <a href="#products" class="btn-dark">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+    <h2 class="section-title">Our Products</h2>
+    <div class="products-row">
+        <!-- Product Card -->
+        <div class="product-card">
+            <img src="img/pexels-joaquim-xadreque-2160351947-36659007.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 15 Pro</h5>
+                <p>$999</p>
+                <p class="product-desc">Powerful performance with A17 chip</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 15 Pro', '$999', 'Powerful performance with A17 chip', 'img/pexels-joaquim-xadreque-2160351947-36659007.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 15 Pro', 999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/pexels-mahavir-shah-416970257-15822008.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 14</h5>
+                <p>$799</p>
+                <p class="product-desc">Reliable and stylish design</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 14', '$799', 'Reliable and stylish design', 'img/pexels-mahavir-shah-416970257-15822008.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 14', 799)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/pexels-seyda-nur-yuce-70589496-16065312.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 13</h5>
+                <p>$699</p>
+                <p class="product-desc">Best value for performance</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 13', '$699', 'Best value for performance', 'img/pexels-seyda-nur-yuce-70589496-16065312.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 13', 699)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="product-card">
+            <img src="img/pexels-joaquim-xadreque-2160351947-36659007.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 15 Pro</h5>
+                <p>$999</p>
+                <p class="product-desc">Powerful performance with A17 chip</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 15 Pro', '$999', 'Powerful performance with A17 chip', 'img/pexels-joaquim-xadreque-2160351947-36659007.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 15 Pro', 999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/pexels-mahavir-shah-416970257-15822008.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 14</h5>
+                <p>$799</p>
+                <p class="product-desc">Reliable and stylish design</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 14', '$799', 'Reliable and stylish design', 'img/pexels-mahavir-shah-416970257-15822008.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 14', 799)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/pexels-seyda-nur-yuce-70589496-16065312.jpg" class="product-img">
+            <div class="product-body">
+                <h5>iPhone 13</h5>
+                <p>$699</p>
+                <p class="product-desc">Best value for performance</p>
+                <div class="product-btns">
+                    <button class="btn-outline" onclick="viewProduct('iPhone 13', '$699', 'Best value for performance', 'img/pexels-seyda-nur-yuce-70589496-16065312.jpg')">View</button>
+                    <button class="btn-dark" onclick="buyProduct('iPhone 13', 699)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section>
+    <div class="why-container">
+        <h2>Why Choose Us</h2>
+        <div class="why-row">
+            <div class="why-item">✔ Original Products</div>
+            <div class="why-item">✔ Fast Delivery</div>
+            <div class="why-item">✔ Warranty</div>
+            <div class="why-item">✔ 24/7 Support</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p class="about-desc">
+            Faisal Apple Store is dedicated to providing only genuine Apple products with trusted service and support. We believe in quality, transparency, and customer satisfaction. Our team ensures every device is authentic and every customer is happy with their purchase. Thank you for choosing us as your Apple destination!
+        </p>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" autocomplete="off">
+            <label for="contactName" class="contact-label">Name</label>
+            <input id="contactName" name="name" type="text" class="contact-input" placeholder="Your Name" required>
+            <label for="contactEmail" class="contact-label">Email</label>
+            <input id="contactEmail" name="email" type="email" class="contact-input" placeholder="Your Email" required>
+            <label for="contactMsg" class="contact-label">Message</label>
+            <textarea id="contactMsg" name="message" class="contact-input" placeholder="Message" required></textarea>
+            <button type="submit" class="btn-dark">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-section">
+        <p>© 2026 Faisal Apple Store. All rights reserved.</p>
+        <p>Made with <span class="footer-heart">♥</span> by Faisal</p>
+</footer>
+
+<!-- Product View Modal -->
+<div class="custom-modal" id="productModal" style="display:none;">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h5 id="modalProductName">Product Details</h5>
+                <button type="button" class="modal-close" onclick="closeModal('productModal')">×</button>
+            </div>
+            <div class="custom-modal-body">
+                <img id="modalProductImage" src="" class="modal-img">
+                <h4 id="modalProductPrice"></h4>
+                <p id="modalProductDesc"></p>
+            </div>
+            <div class="custom-modal-footer">
+                <button type="button" class="btn-outline" onclick="closeModal('productModal')">Close</button>
+                <button type="button" class="btn-dark" id="modalBuyBtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div class="custom-modal" id="cartModal" style="display:none;">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h5>Shopping Cart</h5>
+                <button type="button" class="modal-close" onclick="closeModal('cartModal')">×</button>
+            </div>
+            <div class="custom-modal-body">
+                <div id="cartItems"></div>
+                <hr>
+                <h5>Total: $<span id="cartTotal">0</span></h5>
+            </div>
+            <div class="custom-modal-footer">
+                <button type="button" class="btn-outline" onclick="closeModal('cartModal')">Continue Shopping</button>
+                <button type="button" class="btn-dark" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
